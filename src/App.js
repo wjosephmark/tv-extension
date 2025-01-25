@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import buyButton from './components/buy-button.js'
+import sellButton from './components/sell-button.js'
 
 function App() {
   return (
