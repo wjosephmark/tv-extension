@@ -1,10 +1,10 @@
 {
-  "name": "Hello Extensions",
+  "name": "TVE Extension",
   "description": "Base Level Extension",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
-    "default_icon": "images/thumbs_up.png"
+    "default_icon": "images/stonks.jpeg"
   }
 }
