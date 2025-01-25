@@ -4,7 +4,17 @@
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "images/stonks.jpeg"
-  }
+    "default_popup": "index.html", 
+    "default_icon": {
+      "16": "images/stonks-16.png",  
+      "48": "images/stonks-48.png",
+      "128": "images/stonks-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"  
+  ]
 }

@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  text-align: left;  /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start; /* Align content to the left */
+  padding: 10px; /* Optional: adds a little padding around the content */
 }
 
 .App-logo {
@@ -15,13 +20,14 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; /* Align logo and text to the left */
+  justify-content: flex-start; /* Align content to the top */
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%; /* Ensure it takes up the full width */
+  padding: 10px; /* Optional: adds a little padding inside the header */
 }
 
 .App-link {
