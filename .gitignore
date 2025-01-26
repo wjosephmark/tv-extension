@@ -1,26 +1,5 @@
-# Ignore the dist directory (build output)
 dist/
-
-# Ignore the manifest file (if you don't want it in the repo)
-manifest.json
-
-# Node.js dependencies
 node_modules/
-
-# Ignore lock files
 package-lock.json
-
-# Ignore package.json (optional, if you don't want dependencies/versioning in the repo)
 package.json
-
-# Source files
-src/
-
-# Webpack configuration
-webpack.config.js
-
-# Optional: Ignore logs, OS-generated files, etc.
-*.log
-.DS_Store
-Thumbs.db
 
