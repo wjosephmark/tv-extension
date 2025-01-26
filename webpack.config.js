@@ -7,7 +7,7 @@ export default {
   entry: {
 		contentScript: './src/content/index.js',
 		background: './src/background/index.js',
-		react: './src/react/index.jsx'
+		react: './src/index.jsx'
 	},
 	output: {
 		path: path.resolve('dist'),
@@ -15,11 +15,11 @@ export default {
 		clean: true
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'], // Add .jsx to recognized extensions
+		extensions: ['.js', '.jsx'],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './src/index.html'
+			template: './public/index.html'
 		}),
 		new CopyPlugin({
 			patterns: [{
