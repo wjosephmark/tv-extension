@@ -22,10 +22,20 @@ export default {
 			template: './public/index.html'
 		}),
 		new CopyPlugin({
-			patterns: [{
-				from: path.resolve('manifest.json'),
-				to: path.resolve('dist')
-			}]
+			patterns: [
+				{
+					from: path.resolve('manifest.json'),
+					to: path.resolve('dist')
+				},
+				{
+					from: path.resolve('public/audios'), 
+					to: 'audios'
+				},
+        {
+					from: path.resolve('public/images'),
+					to: 'images'
+				},
+			],
 		})
 	],
 	module: {
